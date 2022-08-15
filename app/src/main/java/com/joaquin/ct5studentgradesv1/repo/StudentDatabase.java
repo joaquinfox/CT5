@@ -1,4 +1,4 @@
 package com.joaquin.ct5studentgradesv1.repo;
 
-public class GradesDatabase {
+public class StudentDatabase {
 }
