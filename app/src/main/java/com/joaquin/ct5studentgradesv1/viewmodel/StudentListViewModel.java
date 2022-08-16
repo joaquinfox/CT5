@@ -18,7 +18,7 @@ public class StudentListViewModel {
         return gradeRepo.getStudents();
     }
 
-    public void addStudent(Student student){
+    public void addStudent(Student student) {
         gradeRepo.addStudent(student);
     }
 }

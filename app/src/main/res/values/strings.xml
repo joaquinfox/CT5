@@ -19,7 +19,7 @@
     <string name="question_added">Question added.</string>
     <string name="question_updated">Question updated.</string>
     <string name="create">Create</string>
-    <string name="subject">New subject?</string>
+    <string name="student">New student?</string>
     <string name="cancel">Cancel</string>
     <string name="edit_question">Edit Question</string>
     <string name="add_question">Add Question</string>
