@@ -7,6 +7,7 @@ import com.joaquin.ct5studentgradesv1.model.Student;
 import java.util.ArrayList;
 import java.util.List;
 
+/* as it is, GradeRepository does not interact with db*/
 public class GradeRepository {
     private static GradeRepository gradeRepo;
     private final List<Student> studentList;
