@@ -28,17 +28,23 @@ public class GradeRepository {
 
     private void addStarterData() {
         // Add some students
-        Student student = new Student("Chuck", "Finkleton", 60.20);
-        student.setId(1);
+//        Student student = new Student("Chuck", "Finkleton", 60.20);
+//        student.setId(1);
+//        addStudent(student);
+//        student = new Student("Nancy", "Bingbing", 60.20);
+//        student.setId(1);
+//        addStudent(student);
+//        student = new Student("Frank", "Wooper", 60.20);
+//        student.setId(1);
+//        addStudent(student);
+//        student = new Student("Tanya", "Barker", 60.20);
+//        student.setId(1);
+//        addStudent(student);
+        Student student = new Student("test data one");
         addStudent(student);
-        student = new Student("Nancy", "Bingbing", 60.20);
-        student.setId(1);
+        student = new Student("test data one");
         addStudent(student);
-        student = new Student("Frank", "Wooper", 60.20);
-        student.setId(1);
-        addStudent(student);
-        student = new Student("Tanya", "Barker", 60.20);
-        student.setId(1);
+        student = new Student("test data one");
         addStudent(student);
     }
 

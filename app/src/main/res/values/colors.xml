@@ -12,7 +12,7 @@
     <color name="gray_500">#999</color>
     <color name="gray_700">#555</color>
 
-    <array name="subjectColors">
+    <array name="studentColors">
         <item>#1A237E</item>
         <item>#880E4F</item>
         <item>#006064</item>

@@ -35,7 +35,6 @@ public class StudentDialogFragment extends DialogFragment {
     public void onAttach(@NonNull Context context) {
         super.onAttach(context);
         listener = (OnStudentEnteredListener) context;
-
     }
 
     public void onDetach() {
