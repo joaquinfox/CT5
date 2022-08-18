@@ -40,11 +40,11 @@ public class GradeRepository {
 //        student = new Student("Tanya", "Barker", 60.20);
 //        student.setId(1);
 //        addStudent(student);
-        Student student = new Student("test data one");
+        Student student = new Student("Chuck", "Frank", 60.2);
         addStudent(student);
-        student = new Student("test data one");
+        student = new Student("Sue", "Whoopy", 78.0);
         addStudent(student);
-        student = new Student("test data one");
+        student = new Student("Jim", "Jumper",84.57);
         addStudent(student);
     }
 

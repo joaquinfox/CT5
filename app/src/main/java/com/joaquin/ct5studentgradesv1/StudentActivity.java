@@ -7,12 +7,15 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
+
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
+
 import com.joaquin.ct5studentgradesv1.model.Student;
 import com.joaquin.ct5studentgradesv1.viewmodel.StudentListViewModel;
+
 import java.util.List;
 
 public class StudentActivity extends AppCompatActivity
@@ -50,13 +53,13 @@ public class StudentActivity extends AppCompatActivity
     }
 
     @Override
-    public void onStudentEntered(String studentText) {
-        if (studentText.length() > 0) {
-            Student student = new Student(studentText);
+    public void onStudentEntered(String studentFirstName, String studentLastName, double studentGrade) {
+        if (studentFirstName.length() > 0) {
+            Student student = new Student(studentFirstName, studentLastName, studentGrade);
             studentListViewModel.addStudent(student);
             updateUI(studentListViewModel.getStudents());
 
-            Toast.makeText(this, "Added " + studentText, Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "Added " + studentFirstName, Toast.LENGTH_SHORT).show();
         }
     }
 
@@ -81,13 +84,12 @@ public class StudentActivity extends AppCompatActivity
             super(itemView);
         }
 
-        public void bind(Student subject, int position) {
-            student = subject;
-            studentTextView.setText(student.getText());
+        public void bind(Student student, int position) {
+            student = student;
+            studentTextView.setText(student.getFirstName()+" "+student.getLastName()+"\n"+
+                   "Grade: "+ student.getGrade());
 
-            // Make the background color dependent on the length of the subject string
-            int colorIndex = student.getText().length() % studentColors.length;
-            studentTextView.setBackgroundColor(studentColors[colorIndex]);
+            studentTextView.setBackgroundColor(studentColors[0]);
         }
 
         @Override

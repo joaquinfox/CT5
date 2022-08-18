@@ -13,7 +13,7 @@ import androidx.fragment.app.DialogFragment;
 public class StudentDialogFragment extends DialogFragment {
 
     public interface OnStudentEnteredListener {
-        void onStudentEntered(String studentText);
+        void onStudentEntered(String studentFirstName, String studentLastName, double studentGrade);
     }
 
     private OnStudentEnteredListener listener;
@@ -28,7 +28,7 @@ public class StudentDialogFragment extends DialogFragment {
                 .setView(studentEditText)
                 .setPositiveButton(R.string.create, (dialog, whichButton) -> {
                     String student = studentEditText.getText().toString();
-                    listener.onStudentEntered(student.trim());
+//                    listener.onStudentEntered(student.trim());
                 }).setNegativeButton(R.string.cancel, null).create();
     }
 
